@@ -1,0 +1,11 @@
+### Requisito 1 - Tipologia corsi
+
+# Ottenere tutti i tipi di corsi
+GET http://localhost:3000/api/courseTypes
+
+###
+
+# Ottenere un tipo di corso specifico per ID
+GET http://localhost:3000/api/courseTypes/1
+
+###

@@ -1,0 +1,40 @@
+
+
+### Requisito 2 - Corsi
+
+# Ottenere tutti i corsi
+GET http://localhost:3000/api/courses
+
+###
+
+# Ottenere un corso specifico per ID
+GET http://localhost:3000/api/courses/5
+
+###
+
+# Creare un nuovo corso
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{
+  "name": "Nome del corso",
+  "idType": 1
+}
+
+###
+
+# Aggiornare un corso esistente per ID
+PUT http://localhost:3000/api/courses/12
+Content-Type: application/json
+
+{
+  "name": "Nome del corso aggiornato",
+  "idType": 2
+}
+
+###
+
+# Eliminare un corso per ID
+DELETE http://localhost:3000/api/courses/12
+
+###

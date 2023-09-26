@@ -1,0 +1,34 @@
+### Testare l'elenco di tutte le università
+###OK###
+GET http://localhost:3000/api/universities
+###
+
+### Testare una singola università per ID
+###OK###
+GET http://localhost:3000/api/universities/1
+
+###
+
+### Aggiungere una nuova università
+###OK###
+POST http://localhost:3000/api/universities
+Content-Type: application/json
+
+{
+  "name": "Università di Test"
+}
+###
+
+##Aggiornare un'università esistente
+###OK###
+PUT http://localhost:3000/api/universities/13
+Content-Type: application/json
+
+{
+  "name": "Nuovo Nome Università"
+}
+###
+
+### Eliminare un'università esistente
+###OK###
+DELETE http://localhost:3000/api/universities/13

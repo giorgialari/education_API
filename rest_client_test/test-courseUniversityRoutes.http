@@ -1,0 +1,26 @@
+### Requisito 4 - POST /associateCourseToUniversity
+POST http://localhost:3000/api/associateCourseToUniversity
+Content-Type: application/json
+
+{
+  "course_id": 1,
+  "university_id": 2
+}
+
+###
+
+### Requisito 5 - GET /coursesAndUniversities 
+GET http://localhost:3000/api/coursesAndUniversities
+###
+
+### Requisito 5 - GET /coursesAndUniversities with courseName filter
+GET http://localhost:3000/api/coursesAndUniversities?courseName=Letteratura Italiana
+###
+
+### Requisito 5 - GET /coursesAndUniversities with courseType filter
+GET http://localhost:3000/api/coursesAndUniversities?courseType=Lettere
+###
+
+### Requisito 5 - GET /coursesAndUniversities with both filters
+GET http://localhost:3000/api/coursesAndUniversities?courseName=Economia Aziendale&courseType=Economia
+###
